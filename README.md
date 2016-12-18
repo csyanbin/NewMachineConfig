@@ -93,9 +93,12 @@ set g:SuperTabDefaultCompletionType="context"
 ## 文件和布局插件
 NERDTree提供树形浏览文件系统的界面，MiniBufExplorer提供多文件同时编辑功能，而Winmanager将这NERDTree界面和Taglist界面整合起来，使Vim更像VS！
 下载路径：
-                  http://www.vim.org/scripts/script.php?script_id=1658
-                    http://www.vim.org/scripts/script.php?script_id=159
-hhttp://www.vim.org/scripts/script.php?script_id=1643
+            
+			http://www.vim.org/scripts/script.php?script_id=1658
+            
+			http://www.vim.org/scripts/script.php?script_id=159
+			
+			http://www.vim.org/scripts/script.php?script_id=1643
 UseVimball ~/.vim
 
 vimrc配置
