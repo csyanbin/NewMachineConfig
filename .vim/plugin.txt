@@ -1,0 +1,20 @@
+nerdtree:
+	autoload
+	nerdtree_plugin
+	syntax
+	lib
+
+OmniCppComplete:
+	autoload
+	after
+
+plugin:
+	NERD_tree.vim
+	cscope_maps.vim
+	minibufexpl.vim
+	supertab.vim
+	taglist.vim
+	winfileexplorer.vim
+	winmanager.vim
+	wintagexplorer.vim
+
