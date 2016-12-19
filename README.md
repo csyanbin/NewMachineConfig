@@ -1,3 +1,14 @@
+Vundle：https://github.com/VundleVim/Vundle.vim
+实现一个vimrc走天下
+### 安装
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+### 配置文件
+https://github.com/VundleVim/Vundle.vim
+###  自己的配置
+https://github.com/csyanbin/myvim
+----------------------------------------------------------------------------------
 参考博客http://blog.csdn.net/bokee/article/details/6633193，搭建了自己使用的vim IDE
 后续考虑学习使用Vundle进行优化配置
 
