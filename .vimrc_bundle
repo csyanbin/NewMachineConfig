@@ -18,7 +18,7 @@ set ignorecase smartcase
 set autoindent  
 set tabstop=4  
 set shiftwidth=4  
-set mouse=a 
+"set mouse=a 
 
 " 自定义 ctags TagList TlistToggle cscope等配置
 " <<快捷生成ctags文件 ctrl+F12>>
