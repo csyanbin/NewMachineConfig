@@ -70,7 +70,7 @@ nmap wm :WMToggle<CR>
 let g:NERDTree_title="[NERDTree]"  
   
 function! NERDTree_Start()  
-	"exe  'q'
+	exe  'q'
     exec 'NERDTree'  
 endfunction  
   
