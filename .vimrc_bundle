@@ -18,7 +18,15 @@ set ignorecase smartcase
 set autoindent  
 set tabstop=4  
 set shiftwidth=4  
+set expandtab  " tab 按照空格存储
 "set mouse=a 
+retab!
+
+if has("autocmd")
+	autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+endif
+set list
+set listchars=tab:▸\ ,
 
 " 自定义 ctags TagList TlistToggle cscope等配置
 " <<快捷生成ctags文件 ctrl+F12>>
