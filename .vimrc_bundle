@@ -71,7 +71,8 @@ let g:miniBufExplMoreThanOne=0
 
 " <<winManager>>
 let g:winManagerWidth=30
-let g:winManagerWindowLayout="NERDTree|TagList"  
+let g:winManagerWindowLayout="NERDTree"
+"let g:winManagerWindowLayout="NERDTree|TagList"  
 nmap wm :WMToggle<CR> 
 
 " <<Nerd Tree>>
