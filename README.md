@@ -1,5 +1,6 @@
 Vundle：https://github.com/VundleVim/Vundle.vim
 实现一个vimrc走天下
+需要先配置好ctags和cscope
 ### 安装
 ```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
