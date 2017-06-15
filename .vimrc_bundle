@@ -164,6 +164,7 @@ filetype plugin indent on    " required
 " 加入python代码折叠 "
 " 加入退出下次打开相同文件的时候进入上次位置的配置
 " set mouse=a 在mac需要按住opt才能选中内容，在linux需要按住shift
+	" 备用方案，在mac上可以直接y复制到*寄存器，和系统可以互通
 
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
@@ -197,6 +198,6 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 " :vs a.name
 " 缓冲区文件名支持tab，支持模糊匹配
 
-" 默认拷贝东西到系统剪切板
-set clipboard=unnamed
+" mac 系统有效，但是ubuntu以及arclinux没看出来作用
+set clipboard=unnamed  " 使用y拷贝到vim寄存器*默认和系统可以互通
 
