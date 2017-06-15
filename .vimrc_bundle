@@ -19,7 +19,7 @@ set autoindent
 set tabstop=4  
 set shiftwidth=4  
 set expandtab  " tab 按照空格存储
-"set mouse=a 
+"set mouse=a "在mac系统需要按住opt才能进行复制文件
 retab!
 
 if has("autocmd")
@@ -156,3 +156,43 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" ----------------------------------------------------------- "
+" ----lyb-----2017-06-15"
+" 加入split快捷跳转方式
+" 加入buffer用法说明
+" 加入python代码折叠 "
+" 加入退出下次打开相同文件的时候进入上次位置的配置
+" set mouse=a 在mac需要按住opt才能选中内容，在linux需要按住shift
+
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+" add split direction"
+" split key: sb(sv)   vs
+set splitbelow
+set splitright
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set foldenable              " 开始折叠
+set foldmethod=indent       " 设置缩进折叠
+"set foldmethod=syntax       " 设置语法折叠
+set foldcolumn=0            " 设置折叠区域的宽度
+setlocal foldlevel=1        " 设置折叠层数为
+set foldlevelstart=99       " 打开文件是默认不折叠代码
+
+"set foldclose=all          " 设置为自动关闭折叠
+nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+                            " 用空格键来开关折叠
+" 使用，空格在对应位置打开关闭折叠"
+" zR 关闭全部折叠，zM打开全部折叠
+
+" vim *.py 打开所有文件到缓冲区
+" :ls 查看缓冲区列表
+" :b 1 进入缓冲区文件
+" :sb 1
+" :vs a.name
+" 缓冲区文件名支持tab，支持模糊匹配
