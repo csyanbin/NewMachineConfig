@@ -19,14 +19,14 @@ set autoindent
 set tabstop=4  
 set shiftwidth=4  
 set expandtab  " tab 按照空格存储
-"set mouse=a "在mac系统需要按住opt才能进行复制文件
+set mouse=a "在mac系统需要按住opt才能进行复制文件，linux按住shift
 retab!
 
 if has("autocmd")
 	autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
 endif
-set list
-set listchars=tab:▸\ ,
+"set list
+"set listchars=tab:▸\ ,
 
 " 自定义 ctags TagList TlistToggle cscope等配置
 " <<快捷生成ctags文件 ctrl+F12>>
