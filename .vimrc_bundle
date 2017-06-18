@@ -203,3 +203,4 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 " mac 系统有效，但是ubuntu以及arclinux没看出来作用
 set clipboard=unnamed  " 使用y拷贝到vim寄存器*默认和系统可以互通
 
+let g:ycm_python_binary_path = 'python'
