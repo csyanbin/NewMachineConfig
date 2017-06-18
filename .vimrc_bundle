@@ -21,7 +21,7 @@ set autoindent
 set tabstop=4  
 set shiftwidth=4  
 set expandtab  " tab 按照空格存储
-set mouse=a "在mac系统需要按住opt才能进行复制文件，linux按住shift
+"set mouse=a "在mac系统需要按住opt才能进行复制文件，linux按住shift
 retab!
 
 if has("autocmd")
