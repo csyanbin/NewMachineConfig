@@ -143,6 +143,11 @@ Bundle 'The-NERD-tree'
 Bundle 'Taglist.vim'
 Bundle 'Tagbar'
 Bundle 'Valloric/YouCompleteMe'
+Plugin 'Yggdroot/indentLine'
+
+" 缩进提示线
+let g:indentLine_char='|'
+let g:indentLine_enabled = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
