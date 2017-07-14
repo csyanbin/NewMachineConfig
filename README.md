@@ -11,8 +11,10 @@ https://github.com/VundleVim/Vundle.vim
 https://github.com/csyanbin/myvim
 ### YCM
 https://github.com/Valloric/YouCompleteMe   
+cd ~/.vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git   
 cd ~/.vim/bundle/YouCompleteMe   
+git submodule update --init --recursive   
 ./install.py --clang-completer   
 ~/.vimrc加入配置行 let g:ycm_python_binary_path = 'python'   
 
