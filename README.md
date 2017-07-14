@@ -10,11 +10,11 @@ https://github.com/VundleVim/Vundle.vim
 ###  自己的配置
 https://github.com/csyanbin/myvim
 ### YCM
-https://github.com/Valloric/YouCompleteMe
-git clone https://github.com/Valloric/YouCompleteMe.git
-cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer
-~/.vimrc加入配置行 let g:ycm_python_binary_path = 'python'
+https://github.com/Valloric/YouCompleteMe   
+git clone https://github.com/Valloric/YouCompleteMe.git   
+cd ~/.vim/bundle/YouCompleteMe   
+./install.py --clang-completer   
+~/.vimrc加入配置行 let g:ycm_python_binary_path = 'python'   
 
 ----------------------------------------------------------------------------------
 参考博客http://blog.csdn.net/bokee/article/details/6633193，搭建了自己使用的vim IDE
