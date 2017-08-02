@@ -21,7 +21,7 @@ git submodule update --init --recursive
 #### ZSH
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
-chsh -s `which zsh`
+chsh -s \`which zsh\`
 
 
 ----------------------------------------------------------------------------------
