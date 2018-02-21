@@ -1,9 +1,9 @@
-## 1. SSH
+## 1. SSH   
 ssh-keygen -t rsa -f file -b 1024   
 copy local machine ~/.ssh/id_rsa.pub to new machine ~/.ssh/authorized_key   
 chmod 644 to ~/.ssh/authorized_key if encounters problem   
 
-## 2. zsh (if no sudo)
+## 2. zsh (if no sudo)   
 sudo apt-get install zsh   
 chsh -s \`which zsh\`   
 在没有sudo权限的情况下安装zsh全套   
