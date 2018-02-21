@@ -1,9 +1,9 @@
 ## INSTALL   
-    #check version and python support   
+    ### check version and python support   
     vim --version   	
-    #install bundle to manage plugins   
+    ### install bundle to manage plugins   
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim   
-    #Config   
+    ### Config   
     https://github.com/VundleVim/Vundle.vim   
     #MyCongfig   
     https://github.com/csyanbin/myvim   
