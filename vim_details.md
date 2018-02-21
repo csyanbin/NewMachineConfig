@@ -1,23 +1,23 @@
 INSTALL
-    #check version and python support
-    vim --version	
-    #install bundle to manage plugins
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    #Config
-    https://github.com/VundleVim/Vundle.vim
-    #MyCongfig
-    https://github.com/csyanbin/myvim
-    #YCM install in case of problem
-    cd ~/.vim/bundle
+    #check version and python support   
+    vim --version   	
+    #install bundle to manage plugins   
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim   
+    #Config   
+    https://github.com/VundleVim/Vundle.vim   
+    #MyCongfig   
+    https://github.com/csyanbin/myvim   
+    #YCM install in case of problem   
+    cd ~/.vim/bundle   
     git clone https://github.com/Valloric/YouCompleteMe.git   
     cd ~/.vim/bundle/YouCompleteMe   
-    git submodule update --init --recursive
-    ./install.py --clang-completer
-    #install ctags if not
-    wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
-    tar xvf ctags-5.8.tar.gz && cd ctags-5.8.tar.gz
-    ./configure --prefix=/home/yanbin/.local
-    make && make install
+    git submodule update --init --recursive   
+    ./install.py --clang-completer   
+    #install ctags if not   
+    wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz   
+    tar xvf ctags-5.8.tar.gz && cd ctags-5.8.tar.gz   
+    ./configure --prefix=/home/yanbin/.local   
+    make && make install   
 
 
 ----------------------------------------------------------------------------------
