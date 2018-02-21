@@ -1,4 +1,4 @@
-INSTALL
+INSTALL   
     #check version and python support   
     vim --version   	
     #install bundle to manage plugins   
