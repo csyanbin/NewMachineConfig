@@ -1,33 +1,33 @@
-1. SSH
-ssh-keygen -t rsa -f file -b 1024
-copy local machine ~/.ssh/id_rsa.pub to new machine ~/.ssh/authorized_key
-chmod 644 to ~/.ssh/authorized_key if encounters problem
+## 1. SSH
+ssh-keygen -t rsa -f file -b 1024   
+copy local machine ~/.ssh/id_rsa.pub to new machine ~/.ssh/authorized_key   
+chmod 644 to ~/.ssh/authorized_key if encounters problem   
 
-2. zsh (if no sudo)
-sudo apt-get install zsh
-chsh -s \`which zsh\`
-在没有sudo权限的情况下安装zsh全套
-ncurses: 
-    wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.1.tar.gz
-    tar -zxvf ncurses-6.1.tar.gz
-    export CXXFLAGS=" -fPIC"
-    export CFLAGS=" -fPIC"
-    ./configure --enable-shared --prefix=/home/yanbin/.local
-    make & make install
-    #ADD INCLUDE PATH to SYSTEM header file search path
-    export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/home/yanbin/.local/include
-    export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/yanbin/.local/include
+## 2. zsh (if no sudo)
+sudo apt-get install zsh   
+chsh -s \`which zsh\`   
+在没有sudo权限的情况下安装zsh全套   
+### ncurses:   
+    wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.1.tar.gz   
+    tar -zxvf ncurses-6.1.tar.gz   
+    export CXXFLAGS=" -fPIC"   
+    export CFLAGS=" -fPIC"   
+    ./configure --enable-shared --prefix=/home/yanbin/.local   
+    make & make install   
+    #ADD INCLUDE PATH to SYSTEM header file search path   
+    export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/home/yanbin/.local/include   
+    export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/yanbin/.local/include   
    
-zsh:
-    export CPPFLAGS="-I/home/yanbin/.local/include" LDFLAGS="-L/home/yanbin/.local/lib"
-    ./configure --prefix=/home/yanbin/.local --enable-shared
-    make & make install
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"    
-    #add to default shell and exec while login
-    export SHELL=$HOME/bin/zsh
-    exec $HOME/bin/zsh -l
+### zsh:
+    export CPPFLAGS="-I/home/yanbin/.local/include" LDFLAGS="-L/home/yanbin/.local/lib"   
+    ./configure --prefix=/home/yanbin/.local --enable-shared   
+    make & make install   
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"   
+    #add to default shell and exec while login   
+    export SHELL=$HOME/bin/zsh   
+    exec $HOME/bin/zsh -l   
 
-3. vim
+## 3. vim
     #check version and python support
     vim --version	
     #install bundle to manage plugins
