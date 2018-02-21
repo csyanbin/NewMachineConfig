@@ -1,26 +1,27 @@
 ## INSTALL   
-    ### check version and python support   
+    # check version and python support   
     vim --version   	
-    ### install bundle to manage plugins   
+    # install bundle to manage plugins   
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim   
-    ### Config   
+    # Config   
     https://github.com/VundleVim/Vundle.vim   
-    #MyCongfig   
+    # MyCongfig   
     https://github.com/csyanbin/myvim   
-    #YCM install in case of problem   
+    # YCM install in case of problem   
     cd ~/.vim/bundle   
     git clone https://github.com/Valloric/YouCompleteMe.git   
     cd ~/.vim/bundle/YouCompleteMe   
     git submodule update --init --recursive   
     ./install.py --clang-completer   
-    #install ctags if not   
+    # install ctags if not   
     wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz   
     tar xvf ctags-5.8.tar.gz && cd ctags-5.8.tar.gz   
     ./configure --prefix=/home/yanbin/.local   
     make && make install   
 
 
-----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
 参考博客http://blog.csdn.net/bokee/article/details/6633193，搭建了自己使用的vim IDE
 后续考虑学习使用Vundle进行优化配置
 
