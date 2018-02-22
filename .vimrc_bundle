@@ -209,3 +209,4 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 set clipboard=unnamed  " 使用y拷贝到vim寄存器*默认和系统可以互通
 
 let g:ycm_python_binary_path = 'python'
+colorscheme delek
