@@ -26,8 +26,21 @@ chsh -s \`which zsh\`
     #add to default shell and exec while login   
     export SHELL=$HOME/bin/zsh   
     exec $HOME/bin/zsh -l   
-
-## 3. vim
+## 3. cmake
+    wget https://cmake.org/files/v3.11/cmake-3.11.0-rc1.tar.gz   
+    tar xvf cmake-3.11.0-rc1.tar.gz   
+    cd cmake-3.11.0-rc1
+    ./configure --prefix=/home/yanbin/.local
+    make && make install
+    
+## 4. htop
+    wget https://hisham.hm/htop/releases/2.1.0/htop-2.1.0.tar.gz   
+    tar xvf htop-2.1.0.tar.gz   
+    cd htop-2.1.0   
+    ./configure --prefix=/home/yanbin/.local --disable-unicode   
+    make && make install
+    
+## 5. vim
     #check version and python support
     vim --version	
     #install bundle to manage plugins
