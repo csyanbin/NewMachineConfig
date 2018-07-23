@@ -144,11 +144,22 @@ Bundle 'The-NERD-tree'
 Bundle 'Taglist.vim'
 Bundle 'Tagbar'
 Bundle 'Valloric/YouCompleteMe'
-Plugin 'Yggdroot/indentLine'
 
-" 缩进提示线
-let g:indentLine_char='¦'
-let g:indentLine_enabled = 1
+"" 缩进提示线
+"缩进插件1
+"Plugin 'Yggdroot/indentLine'
+"let g:indentLine_char='¦'
+"let g:indentLine_enabled = 1
+"缩进插件2
+Plugin 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size = 1
+hi IndentGuidesOdd  guibg=red   ctermbg=3
+hi IndentGuidesEven guibg=green ctermbg=4
+" Go to for '~/.vim/bundle/vim-indent-guides/autoload' folder
+" Put 'highlight Normal ctermbg=NONE' in the first line
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
