@@ -157,8 +157,8 @@ let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size = 1
 hi IndentGuidesOdd  guibg=red   ctermbg=3
 hi IndentGuidesEven guibg=green ctermbg=4
-" Go to for '~/.vim/bundle/vim-indent-guides/autoload' folder
-" Put 'highlight Normal ctermbg=NONE' in the first line
+" Go to '~/.vim/bundle/vim-indent-guides/autoload' folder
+" Put 'highlight Normal ctermbg=NONE' in the first line of indent_guides.vim
 
 
 " All of your Plugins must be added before the following line
