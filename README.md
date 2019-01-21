@@ -28,9 +28,9 @@ chsh -s \`which zsh\`
     exec $HOME/bin/zsh -l   
 ## 3. cmake
     wget https://cmake.org/files/v3.11/cmake-3.11.0-rc1.tar.gz   
-    tar xvf cmake-3.11.0-rc1.tar.gz   
-    cd cmake-3.11.0-rc1
-    ./configure --prefix=/home/yanbin/.local
+    tar xvf cmake-3.11.0-rc1.tar.gz   
+    cd cmake-3.11.0-rc1   
+    ./configure --prefix=/home/yanbin/.local   
     make && make install
     
 ## 4. htop
