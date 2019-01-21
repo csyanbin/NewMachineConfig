@@ -57,7 +57,7 @@ chsh -s \`which zsh\`
     ./install.py --clang-completer
     #install ctags if not
     wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
-    tar xvf ctags-5.8.tar.gz && cd ctags-5.8.tar.gz
+    tar xvf ctags-5.8.tar.gz && cd ctags-5.8
     ./configure --prefix=/home/yanbin/.local
     make && make install
     
