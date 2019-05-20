@@ -12,6 +12,7 @@ chsh -s \`which zsh\`
     tar -zxvf ncurses-6.1.tar.gz   
     export CXXFLAGS=" -fPIC"   
     export CFLAGS=" -fPIC"   
+    cd ncurses-6.1   
     ./configure --enable-shared --prefix=/home/yanbin/.local   
     make & make install   
     #ADD INCLUDE PATH to SYSTEM header file search path   
