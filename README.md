@@ -62,6 +62,10 @@ chsh -s \`which zsh\`
     tar xvf ctags-5.8.tar.gz && cd ctags-5.8
     ./configure --prefix=/home/yanbin/.local
     make && make install
+    export PATH="/home/yanbin/.local/bin:$PATH"
+    " Go to for '~/.vim/bundle/vim-indent-guides/autoload' folder
+    " Put 'highlight Normal ctermbg=NONE' in the first line
+    
     
 4. check python path, pip2 or pip3
     cuda version
