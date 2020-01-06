@@ -66,7 +66,7 @@ chsh -s \`which zsh\`
     " Go to for '~/.vim/bundle/vim-indent-guides/autoload' folder
     " Put 'highlight Normal ctermbg=NONE' in the first line
     
-    
+    ## If path in ~/.bash_profile not working, directly add export sentence to ~/.zshrc file
 4. check python path, pip2 or pip3
     cuda version
 	
