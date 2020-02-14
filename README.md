@@ -106,6 +106,7 @@ function tf_cudnn(){
     export LD_LIBRARY_PATH="~/.local/lib/cuda10-cudnn7.4/lib64:$PATH"
 }
 ## add tf_cudnn() into ~/.zshrc and run tf_cudnn to set LD_LIBRARY_PATH
+pip install torch torchvision  ## use cuda10 and cudnn7.4 ?? maybe
 ```
 ## Others (tmux)
 ```
