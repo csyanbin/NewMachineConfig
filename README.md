@@ -1,25 +1,28 @@
 ## 1. SSH   
-    ssh-keygen # -t rsa -f file -b 1024   
-    # copy local machine ~/.ssh/id_rsa.pub to new machine ~/.ssh/authorized_key   
-    # chmod 644 to ~/.ssh/authorized_key ## if encounters problem   
+ssh-keygen # -t rsa -f file -b 1024   
+#copy local machine ~/.ssh/id_rsa.pub to new machine ~/.ssh/authorized_key   
+#chmod 644 to ~/.ssh/authorized_key ## if encounters problem   
 
 ## 2. ZSH   
-### With sudo
-    sudo apt-get install zsh   
-    chsh -s \`which zsh\`   
+### With sudo   
+```
+sudo apt-get install zsh
+chsh -s \`which zsh\`   
+```
 ### Without sudo 
-#### ncurses (if necessary):   
-    wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.1.tar.gz   
-    tar -zxvf ncurses-6.1.tar.gz   
-    export CXXFLAGS=" -fPIC"   
-    export CFLAGS=" -fPIC"   
-    cd ncurses-6.1   
-    ./configure --enable-shared --prefix=/home/yanbin/.local   
-    make & make install   
-    #ADD INCLUDE PATH to SYSTEM header file search path   
-    export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/home/yanbin/.local/include   
-    export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/yanbin/.local/include   
-   
+**ncurses (if necessary)**   
+```
+wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.1.tar.gz   
+tar -zxvf ncurses-6.1.tar.gz   
+export CXXFLAGS=" -fPIC"   
+export CFLAGS=" -fPIC"   
+cd ncurses-6.1   
+./configure --enable-shared --prefix=/home/yanbin/.local   
+make & make install   
+#ADD INCLUDE PATH to SYSTEM header file search path   
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/home/yanbin/.local/include   
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/yanbin/.local/include   
+```   
 #### zsh from source (if necessary)
     # download zsh source: https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/
     export CPPFLAGS="-I/home/yanbin/.local/include" LDFLAGS="-L/home/yanbin/.local/lib"   
