@@ -92,8 +92,25 @@ export PATH="/home/yanbin/.local/bin:$PATH"
 ```
 
 ## 6. Conda
-## Others
-cuda
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+sh Anaconda3-2019.10-Linux-x86_64.sh
+## TF1
+conda create -n TF1
+conda activate TF1
+conda install cudatoolkit=10.0
+pip install tensorflow-gpu==1.14
+## Download cudnn7.4 and put into ~/.local/lib/cuda10-cudnn7.4/lib64
+function tf_cudnn(){
+    echo "Initialize tf1.14 cudnn7.4 environment"
+    export LD_LIBRARY_PATH="~/.local/lib/cuda10-cudnn7.4/lib64:$PATH"
+}
+```
+## Others (tmux)
+```
+vim ~/.tmux.conf
+set -g mouse on
+```
 	
 
 
