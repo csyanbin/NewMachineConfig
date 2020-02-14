@@ -65,7 +65,7 @@ Install zsh without sudo privillege
     make && make install
     export PATH="/home/yanbin/.local/bin:$PATH"
     " Go to for '~/.vim/bundle/vim-indent-guides/autoload' folder
-    " Put 'highlight Normal ctermbg=NONE' in the first line
+    " Put 'highlight Normal ctermbg=NONE' in the first line of indent_guides.vim
     
     ## If path in ~/.bash_profile not working, directly add export sentence to ~/.zshrc file
 4. check python path, pip2 or pip3
