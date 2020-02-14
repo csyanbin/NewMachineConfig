@@ -105,6 +105,7 @@ function tf_cudnn(){
     echo "Initialize tf1.14 cudnn7.4 environment"
     export LD_LIBRARY_PATH="~/.local/lib/cuda10-cudnn7.4/lib64:$PATH"
 }
+## add tf_cudnn() into ~/.zshrc and run tf_cudnn to set LD_LIBRARY_PATH
 ```
 ## Others (tmux)
 ```
