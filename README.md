@@ -1,12 +1,12 @@
 ## 1. SSH   
-ssh-keygen -t rsa -f file -b 1024   
+ssh-keygen # -t rsa -f file -b 1024   
 copy local machine ~/.ssh/id_rsa.pub to new machine ~/.ssh/authorized_key   
 chmod 644 to ~/.ssh/authorized_key ## if encounters problem   
 
 ## 2. zsh (if no sudo)   
 sudo apt-get install zsh   
 chsh -s \`which zsh\`   
-在没有sudo权限的情况下安装zsh全套   
+Install zsh without sudo privillege 
 ### ncurses:   
     wget https://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.1.tar.gz   
     tar -zxvf ncurses-6.1.tar.gz   
@@ -23,9 +23,10 @@ chsh -s \`which zsh\`
     # download zsh source: https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/
     export CPPFLAGS="-I/home/yanbin/.local/include" LDFLAGS="-L/home/yanbin/.local/lib"   
     ./configure --prefix=/home/yanbin/.local --enable-shared   
-    make & make install   
+    make & make install  
+    ## Oh-my-zsh config
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"   
-    #add to default shell and exec while login   
+    # change default zsh theme to ==> ZSH_THEME="ys"
     export SHELL=$HOME/bin/zsh   
     exec $HOME/bin/zsh -l   
 ## 3. cmake
