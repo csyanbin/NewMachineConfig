@@ -58,7 +58,7 @@ make && make install
 ```
 
 ## 5. VIM
-### Bundle
+#### Bundle
 ```
 # check version and python support
 vim --version	
@@ -68,7 +68,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 https://github.com/VundleVim/Vundle.vim
 https://github.com/csyanbin/myvim
 ```
-### YCM install (in case of problems)
+#### YCM install (in case of problems)
 ```
 cd ~/.vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git   
@@ -76,14 +76,14 @@ cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
 ```
-### ctags
+#### ctags
 ```
 wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
 tar xvf ctags-5.8.tar.gz && cd ctags-5.8
 ./configure --prefix=/home/yanbin/.local
 make && make install
 ```
-### path
+#### path
 ```
 export PATH="/home/yanbin/.local/bin:$PATH"
 " Go to for '~/.vim/bundle/vim-indent-guides/autoload' folder
