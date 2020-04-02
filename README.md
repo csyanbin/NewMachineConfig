@@ -58,6 +58,14 @@ make && make install
 ```
 
 ## 5. VIM
+#### (optional) Manually install vim (+python3 support)
+```
+git clone https://github.com/vim/vim.git
+cd vim/src
+./configure --with-features=huge --enable-python3interp --with-python3-command=python3 --with-python3-config-dir=$(python3-config --configdir) --enable-multibyte --enable-rubyinterp --disable-nls --enable-cscope --enable-rubyinterp --with-tlib=ncurses --prefix=/data/yanbliu/.local 
+make -j 8
+make install
+```
 #### Bundle
 ```
 # check version and python support
