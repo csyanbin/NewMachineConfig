@@ -104,7 +104,7 @@ export PATH="/home/yanbin/.local/bin:$PATH"
 wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 sh Anaconda3-2019.10-Linux-x86_64.sh
 ## TF1
-conda create -n TF1
+conda create -n TF1 ## if python3.7 not supported add "python=3.6.8"
 conda activate TF1
 conda install cudatoolkit=10.0
 pip install tensorflow-gpu==1.14
