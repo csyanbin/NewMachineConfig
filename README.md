@@ -121,7 +121,13 @@ pip install torch torchvision  ## use cuda10 and cudnn7.4 ?? maybe
 vim ~/.tmux.conf
 set -g mouse on
 ```
-	
+
+## Solve Blue LS text in Dark background
+```
+## copy this into ~/.bash_profile
+LS_COLORS=$LS_COLORS:'di=0;36' ; export LS_COLORS
+PS1='[\033[1;36m]\u[\033[1;31m]@[\033[1;32m]\h:[\033[1;35m]\w[\033[1;31m]$[\033[0m] '
+```	
 
 
 
