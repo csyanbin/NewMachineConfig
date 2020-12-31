@@ -79,7 +79,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 https://github.com/VundleVim/Vundle.vim
 https://github.com/csyanbin/myvim
 ```
-#### YCM install (in case of problems)
+#### YCM install (deprecated, use tabnine instead)
 ```
 cd ~/.vim/bundle
 git clone https://github.com/Valloric/YouCompleteMe.git   
