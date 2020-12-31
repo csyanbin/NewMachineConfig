@@ -143,7 +143,8 @@ Bundle 'The-NERD-tree'
 "Bundle 'OmniCppComplete'
 Bundle 'Taglist.vim'
 Bundle 'Tagbar'
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'zxqfl/tabnine-vim'
+"Bundle 'Valloric/YouCompleteMe'
 
 "" 缩进提示线
 "缩进插件1
