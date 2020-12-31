@@ -28,6 +28,8 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/yanbin/.local/include
 **zsh from source (if necessary)**
 ```
 # download zsh source: https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/
+wget https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/zsh-5.8.tar.xz
+tar xf zsh-5.8.tar.xz
 export CPPFLAGS="-I/home/yanbin/.local/include" LDFLAGS="-L/home/yanbin/.local/lib"   
 ./configure --prefix=/home/yanbin/.local --enable-shared   
 make & make install  
