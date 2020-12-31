@@ -36,6 +36,7 @@ make & make install
 ```
 **Oh-My-ZSH**
 ```
+export PATH="$HOME/.local/bin:$PATH"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"   
 # change default zsh theme to ==> ZSH_THEME="ys"
 export SHELL=$HOME/bin/zsh   
