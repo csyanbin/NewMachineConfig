@@ -1,3 +1,10 @@
+## 0. .local folder
+mkdir ~/.local
+mkdir ~/.local/lib
+mkdir ~/.local/bin
+mkdir ~/.local/src
+# move to data directory and create a soft link back
+
 ## 1. SSH
 ```
 ssh-keygen # -t rsa -f file -b 1024   
@@ -27,8 +34,8 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/home/yanbin/.local/include
 ```   
 **zsh from source (if necessary)**
 ```
-# download zsh source: https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/
-wget https://ftp.osuosl.org/pub/blfs/conglomeration/zsh/zsh-5.8.tar.xz
+# download zsh source: https://zsh.sourceforge.io/Arc/source.html
+wget https://sourceforge.net/projects/zsh/files/zsh/5.9/zsh-5.9.tar.xz/download
 tar xf zsh-5.8.tar.xz
 export CPPFLAGS="-I/home/yanbin/.local/include" LDFLAGS="-L/home/yanbin/.local/lib"   
 ./configure --prefix=/home/yanbin/.local --enable-shared   
